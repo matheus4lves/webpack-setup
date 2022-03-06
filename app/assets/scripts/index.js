@@ -1,5 +1,9 @@
 import "../styles/styles.css";
-import "./modules/greta.js";
+// Import from Named Exports
+// See: https://www.w3schools.com/js/js_modules.asp
+import { greta } from "./modules/greta";
+
+greta();
 
 // If hot is set to true inside module...
 if (module.hot) {
